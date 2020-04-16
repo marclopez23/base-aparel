@@ -1,0 +1,60 @@
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+/*GENERAL*/
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-size: 100%;
+  background-position: center 20%;
+
+  height:100%;
+  width:100%;
+  overflow:hidden;
+}
+
+main{
+  padding: 5em 10em;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow:hidden;
+  background-image: url('../images/hero-desktop.jpg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto 100%;
+}
+
+h1{
+  margin-top: 3em;
+  margin-bottom: .65em;
+  font-size: 4em;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  width: 41%;
+  line-height: 1.15em;
+  font-weight: 600;
+}
+
+h1 .fina{
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+
+p{
+  color: hsl(0, 36%, 70%);
+  width: 40%;
+  line-height: 1.5em;
+  margin-bottom: 3em;
+}
+
+input.correo{
+  box-sizing: border-box;
+  width: 35%;
+  height: 60px;
+  background-color: transparent;
+  border-radius: 50px;
+  border: solid 1px hsl(0, 36%, 70%);
+  padding: 0 3em;
+  color: hsla(0, 36%, 70%, 0.5);
+}
