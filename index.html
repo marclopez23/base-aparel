@@ -7,11 +7,16 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/css.css">
+
+
+  </script>
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
 </head>
 <body>
   <main>
+    <div class="contenido">
+
       <img src="images/logo.svg" alt="">
 
       <h1><span class="fina">We're</span> coming soon</h1>
@@ -19,11 +24,14 @@
       <p>Hello fellow shoppers! We're currently building our new fashion store.
       Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-      <form class="" action="index.html" method="post">
-        <input class="correo" type="email" name="email" value="Email Address">
-        <input type="submit" name="" value="">
-      </form>
-
+  </div>
+  <div class="formulario"> 
+    <input class="correo" type="text" name="email" value="Email Address" id="email">
+    <button class="boton" onclick="getEmail()">
+      <img src="images/icon-arrow.svg" alt="">
+    </button>
+  </div>
+  <p id="fallo"></p>
     <!-- <footer>
     <p class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
@@ -31,6 +39,7 @@
   </p>
 </footer> !-->
 </main>
-
+<script type="text/javascript" src="/js/js.js">
 </body>
+
 </html>
