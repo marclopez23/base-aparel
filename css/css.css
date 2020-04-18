@@ -4,7 +4,7 @@
 /*GENERAL*/
 
 body, main, div {
-  overflow:hidden;
+
   box-sizing: border-box;
 }
 
@@ -15,7 +15,6 @@ body{
   background-image: url(../images/bg-pattern-desktop.svg);
   background-size: 100%;
   background-position: center 20%;
-
   height:100%;
   width:100%;
 
@@ -23,21 +22,22 @@ body{
 
 main{
   padding: 5em 10em;
-
   height: 100vh;
-  overflow:hidden;
+
   background-image: url('../images/hero-desktop.jpg');
   background-repeat: no-repeat;
   background-position: top right;
   background-size: auto 100%;
 }
 
+
+
 .contenido{
   width: 40%
 }
 
 h1{
-  margin-top: 3em;
+  margin-top: 2em;
   margin-bottom: .65em;
   font-size: 4em;
   text-transform: uppercase;
@@ -60,7 +60,6 @@ p{
 .formulario{
   display: flex;
   overflow: visible;
-
 }
 
 input.correo{
@@ -87,8 +86,86 @@ button.boton {
   width: 100px;
   height: 60px;
   border-radius:50px;
+  box-sizing: border-box;
 }
 
 button.boton:hover{
   background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,245,245,1) 36%, rgba(255,245,245,1) 100%);
+}
+
+
+#fallo{
+  margin: 0.5em 2em;
+}
+
+.hero-img{
+  display: none;
+}
+
+@media only screen and (max-width: 1024px){
+  .hero-img{
+    display: unset;
+  }
+
+  .logo{
+    padding: 2em;
+    width: 100px;
+  }
+
+  .hero-img img{
+    width: 100%;
+    height: auto;
+  }
+
+  body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    background-image: none;
+    height:100%;
+    width:100%;
+  }
+  main{
+    padding: unset;
+    height: 100vh;
+
+    background-image:none;
+
+    background-size: auto 100%;
+  }
+
+  .contenido{
+    width: 100%;
+    padding: 0 2em;
+  }
+
+  h1{
+    margin-top: 1.5em;
+    margin-bottom: .4em;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  p{
+    text-align: center;
+  }
+.formulario{
+  justify-content: center;
+  margin-bottom: 5em;
+}
+  input.correo{
+    width: 80%;
+  }
+
+
+
+  button.boton {
+    width: 85px;
+    margin-left: -4em;
+
+  }
+
 }
